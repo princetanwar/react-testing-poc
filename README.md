@@ -1,4 +1,4 @@
-# which get method should i use to query elements
+b# which get method should i use to query elements
 
 ## your test should resemble how users interact with your code (component, page, etc.) as much as possible. With this in mind, we recommend this order of priority:
 
@@ -30,6 +30,7 @@
 Tips's
 
 1. how to find the aria-role of the element
+   </br>
    ans. use logRoles method form the react-testing-library
 
 ```diff
@@ -39,4 +40,5 @@ Tips's
 ```
 
 2. how to find the best why to query a element
+   </br>
    ans. use testing playground extension available in chrome store then open dev tool and find the playground section.
