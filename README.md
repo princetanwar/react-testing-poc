@@ -26,3 +26,17 @@
 
 1. test if the component is rendered properly
 2.
+
+Tips's
+
+1. how to find the aria-role of the element
+   ans. use logRoles method form the react-testing-library
+
+```diff
+  	const view  = render(<Component  />);
++	logRoles(view.container);
+
+```
+
+2. how to find the best why to query a element
+   ans. use testing playground extension available in chrome store then open dev tool and find the playground section.
