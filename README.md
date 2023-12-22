@@ -53,3 +53,5 @@ Tips's
 5. use husky npm module to automate linting and code formatting.
 
 6. use lint-staged npm module to run es-lint and prettier only on the file that are change sins last commit and avoid running es-lint and prettier on complete code base as it is unnecessary.
+
+7. use msw (mock service worker) to mock api for test.
