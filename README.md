@@ -25,13 +25,13 @@ b# which get method should i use to query elements
 # what to test in React
 
 1. test if the component is rendered properly
-2.
+2. test user event click,scroll etc.
+3. custom hooks
 
 Tips's
 
 1. how to find the aria-role of the element
-   </br>
-   ans. use logRoles method form the react-testing-library
+   - use logRoles method form the react-testing-library
 
 ```diff
   	const view  = render(<Component  />);
@@ -40,5 +40,16 @@ Tips's
 ```
 
 2. how to find the best why to query a element
+
+   - use testing playground extension available in chrome store then open dev tool and find the playground section.
+
    </br>
-   ans. use testing playground extension available in chrome store then open dev tool and find the playground section.
+
+3. use es-lint with testing to make static analysis can happened and ensure the code is well written.
+   </br>
+
+4. use prettier with testing to make sure team follow the same code styling.
+
+5. use husky npm module to automate linting and code formatting.
+
+6. use lint-state npm module to run es-lint and prettier only on the file that are change sins last commit and avoid running es-lint and prettier on complete code base as it is unnecessary.
