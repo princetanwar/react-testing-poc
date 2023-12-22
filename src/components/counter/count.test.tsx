@@ -1,4 +1,4 @@
-import { screen, render } from "@testing-library/react";
+import { screen, render, act } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import Count from "./count";
 
@@ -26,7 +26,9 @@ describe("count component", () => {
       name: /increment/i,
     });
 
-    await user.click(incrementButton);
+    await act(async () => {
+      await user.click(incrementButton);
+    });
     expect(countParagraph).toHaveTextContent("count: 1");
   });
 });
